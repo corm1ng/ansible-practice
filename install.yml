@@ -1,0 +1,12 @@
+---
+- hosts: Baev
+  become_method: sudo
+  become: yes
+  tasks:
+
+    - name: Installing CMATRIX
+      apt: pkg=cmatrix state=latest
+    - name: Installing COWSAY
+      apt: pkg=cowsay state=latest
+    - name: Installing SL
+      apt: pkg=sl state=latest
